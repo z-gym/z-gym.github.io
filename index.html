@@ -154,6 +154,15 @@ section{position:relative;padding:clamp(72px,10vw,140px) clamp(20px,5vw,80px)}
 .reply .bubble.swap{opacity:0}
 .reply .note{color:var(--text-secondary);font-size:15px;margin:16px 0 22px}
 
+/* opinions */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:40px 0 32px}
+.quote{background:var(--panel);border:1px solid var(--line);border-radius:26px;padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.quote blockquote{font-size:clamp(20px,2vw,26px);line-height:1.35;font-weight:500}
+.quote blockquote strong{color:var(--accent);font-weight:700}
+.stars{display:flex;gap:4px;color:var(--accent)}
+.stars svg{width:20px;height:20px}
+.quote .src{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-secondary)}
+
 /* first week */
 .week ol{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,44px);margin-top:48px}
 .week li{border-top:2px solid var(--line-strong);padding-top:22px}
@@ -188,7 +197,7 @@ footer a:hover{color:var(--text-primary)}
 .fab{display:none}
 
 @media (max-width:900px){
-  .start .box,.find .panel,.faq .wrap{grid-template-columns:1fr}
+  .start .box,.find .panel,.faq .wrap,.quotes{grid-template-columns:1fr}
   .faq .side{position:static}
   .week ol{grid-template-columns:1fr}
   .nav ul{display:none}
@@ -301,6 +310,33 @@ footer a:hover{color:var(--text-primary)}
     <article class="card reveal" style="--d:.16s"><figure><img src="assets/mancuernas.jpg" alt="Mancuernas de goma en su rack" loading="lazy"></figure><h3>Mancuernas</h3><p>Un rack completo para elegir tu peso.</p></article>
     <article class="card reveal" style="--d:.24s"><figure><img src="assets/sala.jpg" alt="Banco con barra sobre colchonetas azules" loading="lazy"></figure><h3>Banco y barra</h3><p>Con colchonetas para entrenar cómodo.</p></article>
     <article class="card reveal" style="--d:.32s"><figure><img src="assets/bici.jpg" alt="Bicicleta de spinning amarilla" loading="lazy"></figure><h3>Bicicletas</h3><p>Para mover el cuerpo y bajar de peso.</p></article>
+  </div>
+</section>
+
+<section class="proof" id="opiniones">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">Opiniones</span>
+      <h2 class="h2">Lo que dicen<br>quienes ya entrenan.</h2>
+    </div>
+    <div class="quotes">
+      <figure class="quote reveal">
+        <div class="stars" role="img" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg></div>
+        <blockquote><p>“Es un gimnasio completo y con buen <strong>seguimiento</strong> por parte de los <strong>entrenadores</strong>”</p></blockquote>
+        <figcaption class="src">Opinión en Google</figcaption>
+      </figure>
+      <figure class="quote reveal" style="--d:.1s">
+        <div class="stars" role="img" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg></div>
+        <blockquote><p>“Muy buena atención...”</p></blockquote>
+        <figcaption class="src">Opinión en Google</figcaption>
+      </figure>
+      <figure class="quote reveal" style="--d:.2s">
+        <div class="stars" role="img" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg></div>
+        <blockquote><p>“Buen lugar y económico”</p></blockquote>
+        <figcaption class="src">Opinión en Google</figcaption>
+      </figure>
+    </div>
+    <a class="btn ghost more reveal" href="https://www.google.com/maps/search/?api=1&query=Av+Las+Heras+3810+Posadas+Misiones" target="_blank" rel="noopener">Ver más opiniones en Google</a>
   </div>
 </section>
 
