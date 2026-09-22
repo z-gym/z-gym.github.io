@@ -29,5 +29,6 @@ git push
 - Dirección: Av. Las Heras 3810 y Martín Fierro, Posadas, Misiones.
 - Horario: lunes a viernes, de 7 a 11 h y de 13 a 22 h.
 - WhatsApp: 376 452 3819.
+- Planes: 3 días por semana, $32.000 por mes. 5 días por semana, $35.000 por mes.
 
-Si algo de esto cambia, hay que actualizarlo en `index.html` (buscá el número o el horario con Ctrl + F).
+Si algo de esto cambia, hay que actualizarlo en `index.html` (buscá el número, el horario o el precio con Ctrl + F). Los precios aparecen en dos lugares: la sección "Planes" y la pregunta "¿Cuánto cuesta?".
