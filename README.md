@@ -27,8 +27,14 @@ git push
 ## Datos del gimnasio que aparecen en la página
 
 - Dirección: Av. Las Heras 3810 y Martín Fierro, Posadas, Misiones.
-- Horario: lunes a viernes, de 7 a 11 h y de 13 a 22 h.
+- Horario: lunes a viernes, de 7 a 11 h y de 13 a 22 h. Los profes atienden de 7 a 10 h y de 13 a 21 h; la última hora de cada turno se puede seguir entrenando sin profe, hasta el cierre.
 - WhatsApp: 376 452 3819.
-- Planes: 3 días por semana, $32.000 por mes. 5 días por semana, $35.000 por mes.
+- Planes (precios sujetos a modificación, avisados por la dueña):
+  - 3 días por semana: $36.000 por mes, o $34.000 pagando en efectivo.
+  - 5 días por semana: $38.000 por mes, o $36.000 pagando en efectivo.
+  - Las cuotas son personales e intransferibles.
+  - Entrenamiento personalizado: sin precio fijo publicado, se consulta por WhatsApp (honorarios y disponibilidad horaria).
 
-Si algo de esto cambia, hay que actualizarlo en `index.html` (buscá el número, el horario o el precio con Ctrl + F). Los precios aparecen en dos lugares: la sección "Planes" y la pregunta "¿Cuánto cuesta?".
+Si algo de esto cambia, hay que actualizarlo en `index.html` en estos lugares:
+- Los precios: en la sección "Planes" (cada tarjeta tiene el precio y el precio en efectivo) y en la pregunta "¿Cuánto cuesta?".
+- El horario: en la sección "Cómo llegar" (la caja de horarios) y en la pregunta "¿Cuándo puedo ir?".
